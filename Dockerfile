@@ -1,5 +1,6 @@
 FROM ubuntu:rolling
 LABEL maintainer cryptkiddie-spam@chaospott.de
+EXPOSE 80
 RUN apt update -y
 RUN apt install webhook -y
 RUN rm -rf /var/lib/apt/lists/*
